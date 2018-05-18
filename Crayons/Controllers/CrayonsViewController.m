@@ -8,6 +8,8 @@
 
 #import "CrayonsViewController.h"
 #import "Crayon.h"
+#import "CrayonTableViewCell.h"
+#import "UIColor+Inverse.h"
 
 #define CELLID "CrayonCell"
 
@@ -49,6 +51,8 @@
     //MARK :- TODO: add nib for tableview cell
     UINib *nib = [UINib nibWithNibName:@"CrayonTableViewCell" bundle:nil];
     [self.crayonsTableView registerNib:nib forCellReuseIdentifier:@CELLID];
+//    self.crayonsTableView.rowHeight = UITableViewAutomaticDimension;
+//    self.crayonsTableView.estimatedRowHeight = 200.0;
 }
 
 -(void)addSubviews {
@@ -92,11 +96,20 @@
 #pragma mark - UITableView DataSource
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    return [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
+    
+    CrayonTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@CELLID forIndexPath:indexPath];
+    if (cell) {
+        Crayon *crayon = self.crayons[indexPath.row];
+        [cell configureCellWith:crayon];
+        
+        
+    
+    }
+    return cell;
 }
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return self.crayons.count;
 }
 
 

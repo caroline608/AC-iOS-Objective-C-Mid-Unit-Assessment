@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *crayonNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *hexNumLabel;
+@property (strong, nonatomic) UIColor *cellBackgroundColor;
 
 -(void)configureCellWith:(Crayon*) crayon;
 

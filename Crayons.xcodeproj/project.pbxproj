@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		571A1AB720AB5DC900624059 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 571A1AB620AB5DC900624059 /* AppDelegate.m */; };
-		571A1ABD20AB5DC900624059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571A1ABB20AB5DC900624059 /* Main.storyboard */; };
 		571A1ABF20AB5DCA00624059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571A1ABE20AB5DCA00624059 /* Assets.xcassets */; };
 		571A1AC220AB5DCA00624059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571A1AC020AB5DCA00624059 /* LaunchScreen.storyboard */; };
 		571A1AC520AB5DCA00624059 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 571A1AC420AB5DCA00624059 /* main.m */; };
@@ -17,6 +16,8 @@
 		81914E3B20AF204600EB5120 /* CrayonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81914E3A20AF204600EB5120 /* CrayonsViewController.m */; };
 		81914E3F20AF266600EB5120 /* CrayonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81914E3D20AF266500EB5120 /* CrayonTableViewCell.m */; };
 		81914E4020AF266600EB5120 /* CrayonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81914E3E20AF266500EB5120 /* CrayonTableViewCell.xib */; };
+		81914E4320AF4BC200EB5120 /* UIColor+Inverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 81914E4220AF4BC200EB5120 /* UIColor+Inverse.m */; };
+		81914E4620AF509E00EB5120 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81914E4520AF509E00EB5120 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +34,6 @@
 		571A1AB220AB5DC900624059 /* Crayons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crayons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		571A1AB520AB5DC900624059 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		571A1AB620AB5DC900624059 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		571A1ABC20AB5DC900624059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		571A1ABE20AB5DCA00624059 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		571A1AC120AB5DCA00624059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		571A1AC320AB5DCA00624059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +48,10 @@
 		81914E3C20AF266500EB5120 /* CrayonTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CrayonTableViewCell.h; path = Crayons/Controllers/CrayonTableViewCell.h; sourceTree = SOURCE_ROOT; };
 		81914E3D20AF266500EB5120 /* CrayonTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CrayonTableViewCell.m; path = Crayons/Controllers/CrayonTableViewCell.m; sourceTree = SOURCE_ROOT; };
 		81914E3E20AF266500EB5120 /* CrayonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CrayonTableViewCell.xib; path = Crayons/Controllers/CrayonTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		81914E4120AF4BC200EB5120 /* UIColor+Inverse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIColor+Inverse.h"; path = "Crayons/Models/UIColor+Inverse.h"; sourceTree = SOURCE_ROOT; };
+		81914E4220AF4BC200EB5120 /* UIColor+Inverse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Inverse.m"; path = "Crayons/Models/UIColor+Inverse.m"; sourceTree = SOURCE_ROOT; };
+		81914E4420AF509E00EB5120 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		81914E4520AF509E00EB5120 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 			children = (
 				571A1AD920AB749E00624059 /* Crayon.h */,
 				571A1ADA20AB74DA00624059 /* Crayon.m */,
+				81914E4120AF4BC200EB5120 /* UIColor+Inverse.h */,
+				81914E4220AF4BC200EB5120 /* UIColor+Inverse.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -121,6 +127,8 @@
 			children = (
 				81914E3920AF204600EB5120 /* CrayonsViewController.h */,
 				81914E3A20AF204600EB5120 /* CrayonsViewController.m */,
+				81914E4420AF509E00EB5120 /* DetailViewController.h */,
+				81914E4520AF509E00EB5120 /* DetailViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -130,7 +138,6 @@
 			children = (
 				571A1AB520AB5DC900624059 /* AppDelegate.h */,
 				571A1AB620AB5DC900624059 /* AppDelegate.m */,
-				571A1ABB20AB5DC900624059 /* Main.storyboard */,
 				571A1ABE20AB5DCA00624059 /* Assets.xcassets */,
 				571A1AC020AB5DCA00624059 /* LaunchScreen.storyboard */,
 				571A1AC420AB5DCA00624059 /* main.m */,
@@ -230,7 +237,6 @@
 			files = (
 				571A1AC220AB5DCA00624059 /* LaunchScreen.storyboard in Resources */,
 				571A1ABF20AB5DCA00624059 /* Assets.xcassets in Resources */,
-				571A1ABD20AB5DC900624059 /* Main.storyboard in Resources */,
 				81914E4020AF266600EB5120 /* CrayonTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,7 +259,9 @@
 				571A1AC520AB5DCA00624059 /* main.m in Sources */,
 				571A1AB720AB5DC900624059 /* AppDelegate.m in Sources */,
 				81914E3F20AF266600EB5120 /* CrayonTableViewCell.m in Sources */,
+				81914E4320AF4BC200EB5120 /* UIColor+Inverse.m in Sources */,
 				571A1ADB20AB74DA00624059 /* Crayon.m in Sources */,
+				81914E4620AF509E00EB5120 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,14 +284,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		571A1ABB20AB5DC900624059 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				571A1ABC20AB5DC900624059 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		571A1AC020AB5DCA00624059 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

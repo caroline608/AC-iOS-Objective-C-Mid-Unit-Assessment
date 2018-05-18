@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CrayonsViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    CrayonsViewController *crayonsVC = [[CrayonsViewController alloc] init];
+    _window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    _window.rootViewController = crayonsVC;
+    [_window makeKeyAndVisible];
     return YES;
 }
 
