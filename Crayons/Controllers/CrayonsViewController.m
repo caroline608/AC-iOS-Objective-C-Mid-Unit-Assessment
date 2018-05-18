@@ -24,6 +24,7 @@
     [self configureSubviews];
     [self addSubviews];
     [self configureContraints];
+    [self loadCrayons];
     
 }
 
@@ -46,6 +47,8 @@
     self.crayonsTableView.delegate = self;
     self.crayonsTableView.dataSource = self;
     //MARK :- TODO: add nib for tableview cell
+    UINib *nib = [UINib nibWithNibName:@"CrayonTableViewCell" bundle:nil];
+    [self.crayonsTableView registerNib:nib forCellReuseIdentifier:@CELLID];
 }
 
 -(void)addSubviews {
@@ -62,6 +65,20 @@
                                               [self.crayonsTableView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor]
                                               ]];
 }
+
+#pragma mark - Load Crayons
+
+-(void)loadCrayons {
+    self.crayons = [Crayon allTheCrayons];
+    
+}
+
+
+
+
+
+
+
 /*
 #pragma mark - Navigation
 
@@ -71,6 +88,8 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - UITableView DataSource
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     return [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];

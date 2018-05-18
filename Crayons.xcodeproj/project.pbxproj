@@ -15,6 +15,8 @@
 		571A1ACF20AB5DCA00624059 /* CrayonsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 571A1ACE20AB5DCA00624059 /* CrayonsTests.m */; };
 		571A1ADB20AB74DA00624059 /* Crayon.m in Sources */ = {isa = PBXBuildFile; fileRef = 571A1ADA20AB74DA00624059 /* Crayon.m */; };
 		81914E3B20AF204600EB5120 /* CrayonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81914E3A20AF204600EB5120 /* CrayonsViewController.m */; };
+		81914E3F20AF266600EB5120 /* CrayonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81914E3D20AF266500EB5120 /* CrayonTableViewCell.m */; };
+		81914E4020AF266600EB5120 /* CrayonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81914E3E20AF266500EB5120 /* CrayonTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,9 @@
 		571A1ADA20AB74DA00624059 /* Crayon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Crayon.m; sourceTree = "<group>"; };
 		81914E3920AF204600EB5120 /* CrayonsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrayonsViewController.h; sourceTree = "<group>"; };
 		81914E3A20AF204600EB5120 /* CrayonsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrayonsViewController.m; sourceTree = "<group>"; };
+		81914E3C20AF266500EB5120 /* CrayonTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CrayonTableViewCell.h; path = Crayons/Controllers/CrayonTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		81914E3D20AF266500EB5120 /* CrayonTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CrayonTableViewCell.m; path = Crayons/Controllers/CrayonTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		81914E3E20AF266500EB5120 /* CrayonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CrayonTableViewCell.xib; path = Crayons/Controllers/CrayonTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +141,9 @@
 		57D486AC20ADEBCB0052E870 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				81914E3C20AF266500EB5120 /* CrayonTableViewCell.h */,
+				81914E3D20AF266500EB5120 /* CrayonTableViewCell.m */,
+				81914E3E20AF266500EB5120 /* CrayonTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,6 +231,7 @@
 				571A1AC220AB5DCA00624059 /* LaunchScreen.storyboard in Resources */,
 				571A1ABF20AB5DCA00624059 /* Assets.xcassets in Resources */,
 				571A1ABD20AB5DC900624059 /* Main.storyboard in Resources */,
+				81914E4020AF266600EB5120 /* CrayonTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +252,7 @@
 				81914E3B20AF204600EB5120 /* CrayonsViewController.m in Sources */,
 				571A1AC520AB5DCA00624059 /* main.m in Sources */,
 				571A1AB720AB5DC900624059 /* AppDelegate.m in Sources */,
+				81914E3F20AF266600EB5120 /* CrayonTableViewCell.m in Sources */,
 				571A1ADB20AB74DA00624059 /* Crayon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
