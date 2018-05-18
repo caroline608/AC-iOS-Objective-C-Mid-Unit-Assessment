@@ -41,7 +41,21 @@
 
 
 -(void)configureSubviews {
+    self.name.text = [self.crayon name];
     
+}
+
+-(void)addSubViews {
+    [self.view addSubview:self.name];
+}
+
+-(void)configureConstraints {
+    self.name.translatesAutoresizingMaskIntoConstraints = NO;
+    [NSLayoutConstraint activateConstraints:@[
+                                              [self.name.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor constant:20],
+                                              [self.name.centerXAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.centerXAnchor],
+                                              
+                                              ]];
 }
 
 @end

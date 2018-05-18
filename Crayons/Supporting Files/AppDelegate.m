@@ -18,8 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     CrayonsViewController *crayonsVC = [[CrayonsViewController alloc] init];
+    UINavigationController *navCon = [[UINavigationController alloc] initWithRootViewController:crayonsVC];
     _window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-    _window.rootViewController = crayonsVC;
+    _window.rootViewController = navCon;
     [_window makeKeyAndVisible];
     return YES;
 }

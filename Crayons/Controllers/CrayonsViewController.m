@@ -10,6 +10,7 @@
 #import "Crayon.h"
 #import "CrayonTableViewCell.h"
 #import "UIColor+Inverse.h"
+#import "DetailViewController.h"
 
 #define CELLID "CrayonCell"
 
@@ -112,6 +113,13 @@
     return self.crayons.count;
 }
 
+#pragma mark -UITableView delegate / segue
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    Crayon *selectedCrayon = self.crayons[indexPath.row];
+    DetailViewController *crayonDetailVC = [[DetailViewController alloc]initWithCrayon:selectedCrayon];
+    [self.navigationController pushViewController:crayonDetailVC animated:YES];
+    
+}
 
 @end
